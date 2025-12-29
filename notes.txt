@@ -1,0 +1,6 @@
+------------------------------
+Projet: application e-commerce
+------------------------------
+
+
++ ng generate component features/navbar : Créer une barre de navigation pour l'application e-commerce.
