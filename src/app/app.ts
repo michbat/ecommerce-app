@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
+import { Products } from './components/products/products';
 import { Navbar } from './features/navbar/navbar';
 import { AffichageDate } from './pages/affichage-date/affichage-date';
-import { Card } from './components/card/card';
-import { Products } from './components/products/products';
 
 @Component({
   selector: 'app-root',

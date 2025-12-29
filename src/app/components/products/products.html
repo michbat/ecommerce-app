@@ -1,5 +1,5 @@
 <div class="products d-flex flex-row flex-wrap gap-4">
-  @for (product of products; track product.id) {
+  <!-- @for (product of products; track product.id) {
   <div class="card">
     <img
       [src]="product.image"
@@ -20,6 +20,12 @@
     </div>
   </div>
   } @empty{
+  <div class="text-center">Aucun produit trouvé</div>
+  } -->
+
+  @for (prod of products; track prod.id) {
+  <app-card [product]="prod"></app-card>
+  }@empty {
   <div class="text-center">Aucun produit trouvé</div>
   }
 </div>
