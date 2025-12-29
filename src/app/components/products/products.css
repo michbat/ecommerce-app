@@ -1,0 +1,12 @@
+.products .card{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 18rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.products .card:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}

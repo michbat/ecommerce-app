@@ -1,0 +1,25 @@
+<div class="products d-flex flex-row flex-wrap gap-4">
+  @for (product of products; track product.id) {
+  <div class="card">
+    <img
+      [src]="product.image"
+      class="card-img-top"
+      alt="{{ product.title }}"
+      [title]="product.title"
+    />
+    <div class="card-body d-flex flex-column align-items-center">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <p class="card-text">
+        {{ product.description }} {{ $even ? '- pair' : '- impair' }}
+        {{ $last ? '- dernier' : '' }} {{ $first ? '- premier' : '' }}
+      </p>
+      <p>
+        {{ product.price | currency : 'EUR' : 'symbol' : '1.2-2' }}
+      </p>
+      <a class="btn btn-success">Go somewhere</a>
+    </div>
+  </div>
+  } @empty{
+  <div class="text-center">Aucun produit trouvé</div>
+  }
+</div>
