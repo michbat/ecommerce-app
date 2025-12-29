@@ -1,0 +1,11 @@
+<div class="container mt-3">
+  <h2>Affichage de la date actuelle</h2>
+  <p>Date en format court: {{ today | date : 'shortDate' }}</p>
+  <p>Date en format court: {{ today | date : 'mediumDate' }}</p>
+  <p>Date en format court: {{ today | date : 'longDate' }}</p>
+  <p>Date en format court: {{ today | date : 'fullDate' }}</p>
+  <p>Prix payé: {{ prix | currency : 'EUR' : 'symbol' : '1.2-2' }}</p>
+  <p>Quantité: {{ quantity | number : '1.2-2' }}</p>
+  <p>Quantité: {{ discount | percent : '1.2-2' }}</p>
+  <p>Date: {{ today | date : 'dd/MM/yyyy' | uppercase }}</p>
+</div>
