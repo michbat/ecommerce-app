@@ -1,0 +1,10 @@
+.card {
+  width: 18rem;
+}
+
+.desactivated {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+
+}
